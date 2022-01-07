@@ -1,0 +1,69 @@
+:root {
+  --main-accent-color: #ffd900;
+  --myblue: #00a3ff;
+  --section-title-color-dark: #37474f;
+  --body-color: #495057;
+}
+
+.form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form h3 {
+  color: var(--myblue);
+}
+
+.form .card {
+  width: 50%;
+  border: none;
+  box-shadow: 1px 10px 14px -1px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 1px 10px 14px -1px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 1px 10px 14px -1px rgba(0, 0, 0, 0.41);
+}
+.form .card-header {
+  display: flex;
+  justify-content: center;
+  background: darkgray;
+}
+.form .card-body {
+  padding: 20px auto;
+}
+
+.form form {
+  width: 100%;
+}
+
+.password,
+.confirm-password {
+  position: relative;
+}
+
+.password .fas,
+.confirm-password .fas {
+  color: #8b8b8b;
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+}
+
+.form p {
+  margin-top: 10px;
+}
+
+/* :::::::The login form spacific::::::::::: */
+.forgot-password-and-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* :::::::::::::::::::::Media queries::::::::::::::: */
+@media screen and (max-width: 775px) {
+  .form .card {
+    width: 100%;
+  }
+}

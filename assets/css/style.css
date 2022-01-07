@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap");
+
+:root {
+  --main-accent-color: #ffd900;
+  --myblue: #00a3ff;
+  --section-title-color-dark: #37474f;
+  --body-color: #495057;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* .upper-content {
+
+} */
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: #ffd900 !important;
+}
+
+.btn-white {
+  border: 2px solid #ffffff;
+  border-radius: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: lowercase;
+  font-size: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-white:hover {
+  background-color: #ffffff;
+  color: var(--main-accent-color);
+  border: 2px solid #ffffff;
+}
+
+/* Section title */
+.section-title {
+  position: relative;
+}
+
+h2.section-title-heading {
+  color: var(--myblue);
+  padding-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 40px;
+}
+
+/* ============ NAVIGATION =============== */
+
+.nav-item-wrapper {
+  padding-left: 0;
+}
+
+.navbar {
+  padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffd900;
+}
+.navbar {
+  background: black;
+}
+
+.navbar.active {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 2px 10px rgba(199, 193, 193, 0.1);
+}
+
+.nav-item.btn {
+  margin-left: 20px;
+  border-radius: 50px;
+  padding: 0px 10px;
+}
+
+.nav-item.btn a {
+  text-transform: capitalize !important;
+  letter-spacing: 1px;
+}
+
+/* ============ HERO =============== */
+
+#hero {
+  background: url("../img/bitcoin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  height: 100vh;
+}
+
+.main-hero-content h1 {
+  color: #ffa023;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+  line-height: 1;
+}
+
+.main-hero-content p {
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.image-box img {
+  position: absolute;
+  top: 4rem;
+  z-index: 1;
+}
+
+#connect-wallet-btn {
+  border-radius: 50px;
+}
+
+/* ============ ABOUT =============== */
+
+#about {
+  margin-bottom: 60px;
+}
+
+#about .card {
+  width: 30%;
+  border: none;
+  padding: 0;
+  margin: 20px auto;
+  box-shadow: -3px 10px 18px -9px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -3px 10px 18px -9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -3px 10px 18px -9px rgba(0, 0, 0, 1);
+}
+#about .image {
+  height: 300px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.image1 {
+  background: url("../../assets/img/tech.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image2 {
+  background: url("../../assets/img/etherium.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image3 {
+  background: url("../../assets/img/meeting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about h3 {
+  color: var(--myblue);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#about p {
+  color: var(--body-color);
+  font-size: 1rem;
+  line-height: 1.7rem;
+  padding-bottom: 20px;
+  margin: auto 20px;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::contact:::::::::::::::::::::::::::::: */
+#contact {
+  padding-top: 40px;
+  color: rgb(88, 80, 80);
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* padding: 20px auto; */
+  padding-bottom: 30px;
+}
+
+#contact h3 {
+  color: var(--myblue);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#contact #heading-paragraph {
+  text-align: center;
+}
+
+#contact h4,
+p {
+  font-weight: 300 !important;
+  color: rgb(88, 80, 80);
+}
+
+#contact .section-header {
+  margin-top: 20px !;
+}
+
+.mapAndAddress {
+  display: flex;
+  box-shadow: -1px 7px 9px -1px rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px !important;
+}
+.map {
+  width: 50%;
+}
+.address {
+  width: 50%;
+  overflow: hidden;
+  padding: 30px;
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.location {
+  display: flex;
+}
+
+.address .fas {
+  background: whitesmoke;
+  color: #ff7500;
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 5px;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.56);
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::FOOTER::::::::::::::::::::::::::::::::::::::::: */
+footer {
+  background: #000000;
+  color: #b1ada8;
+  display: flex;
+  justify-content: center;
+}
+.footer-container {
+  margin: 10px;
+  font-size: 85%;
+  text-align: center;
+}
+
+footer .fas {
+  color: red;
+}
+
+footer #company {
+  color: #ffd900;
+}
+
+/* Media queries */
+@media screen and (max-width: 990px) {
+  body {
+    background: #e0eafc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #cfdef3,
+      #e0eafc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  /* ::::::::::::::::::::::The Header::::::::::::::: */
+  .navbar-toggler-icon {
+    border-radius: 2.5px;
+    background: rgb(255, 255, 255);
+  }
+  #register-btn,
+  #login-btn {
+    border-radius: 0;
+    margin: 10px 20px 10px 0;
+    background: var(--main-accent-color);
+    color: var(--myblue);
+  }
+
+  #register-btn a,
+  #login-btn a {
+    color: var(--myblue);
+  }
+
+  .navbar-collapse {
+    background: rgb(90, 198, 224);
+    padding-left: 1rem;
+  }
+
+  /* ::::::::::::::::::::::THE HERO::::::::::::::::: */
+  #hero h1 {
+    line-height: 2rem;
+    margin-bottom: 20px !important;
+  }
+  #hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  #hero-text {
+    text-align: center;
+    width: 100% !important;
+  }
+  #hero-text p {
+    margin: auto 30px;
+    margin-bottom: 20px;
+  }
+  /* ::::::::::::The About page::::::::::: */
+
+  #about .card {
+    width: 100%;
+  }
+
+  /* ::::::::::::::The map and Adress::::::::::::: */
+  .mapAndAddress {
+    flex-direction: column;
+  }
+  .map {
+    width: 100%;
+    height: 300px;
+  }
+  .address {
+    width: 100%;
+  }
+}
+
+/* ::::::::::::::600px and below::::::::::: */
+
+@media screen and (max-width: 600px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+  #hero-text > h1 {
+    font-size: 170%;
+    margin: 0 20px;
+  }
+
+  /* ::::::::::::The About page::::::::::: */
+
+  #about .card {
+    width: 90%;
+  }
+}

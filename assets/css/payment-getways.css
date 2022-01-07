@@ -1,0 +1,54 @@
+#payment-getways {
+  background: #f2f2f2;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#payment-getways .card {
+  width: 300px;
+  min-height: 100px;
+}
+#payment-getways .card:hover {
+  cursor: pointer;
+}
+
+#payment-getways .card .paypal {
+  background: url("../../assets/img/paypal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.modal-header .mpesa {
+  background: url("../../assets/img/mpesa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+#lipa-na-mpesa {
+  background: url("../../assets/img/lipa-na-mpesa-featured.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#fund-with-metamask {
+  background: url("../../assets/img/metamask.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* :::::::::::::::::::::Media queries::::::::::::::: */
+@media screen and (max-width: 992px) {
+  #payment-getways {
+    flex-direction: column;
+  }
+  #payment-getways .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

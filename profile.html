@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Habahaba profile</title>
+  </head>
+  <body>
+    <div class="upper-content">
+      <!-- The navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container nav-item-wrapper">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/habahaba.png" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item btn btn-primary btn-sm" id="register-btn">
+                  <a class="nav-link" href="register.html">register</a>
+                </li>
+                <li class="nav-item btn btn-primary btn-sm" id="login-btn">
+                  <a class="nav-link" href="login.html">login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- mini hero section -->
+      <section class="mini-hero-section" data-aos="fade-down">
+        <div class="container">
+          <div class="prices-wrapper">
+            <div class="card btc">
+              <div class="iconAndName">
+                <span id="btc-logo"></span><span>BTC</span>
+              </div>
+              <div class="amount">
+                <span id="btc-counter">5,269,029.75</span>
+                <span id="kes">KES</span>
+              </div>
+            </div>
+            <div id="text-between-ETH-BTC">
+              <h4 class="text-white">Real time BTC & ETH prices</h4>
+            </div>
+
+            <div class="card eth">
+              <div class="iconAndName">
+                <span id="eth-logo"
+                  ><img
+                    src="./assets//img//ethereum-eth-logo.svg"
+                    alt="eth-logo"
+                    width="30"
+                    height="30" /></span
+                ><span>ETH</span>
+              </div>
+              <div class="amount">
+                <span id="eth-counter">435,008.62</span>
+                <span id="kes">KES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ::::::::::::The projects section:::::::::::::::::::::: -->
+      <section>
+        <div class="container" data-aos="fade-up">
+          <div class="row section-title d-flex flex-column">
+            <span id="active-projects">Orbit 369 system Inc</span>
+          </div>
+        </div>
+      </section>
+      <div class="container owner" id="owner">
+        <div class="project-image" data-aos="fade-right">
+          <img
+            src="./assets//img/orbit.png"
+            alt="night-traffic"
+            width="400"
+            height="200"
+          />
+        </div>
+        <div class="project-text" data-aos="fade-left">
+          <p>Name: Orbit 369 system Inc</p>
+          <p>Members: 6</p>
+          <p>
+            <i class="fas fa-globe"></i>
+            <a href="https://www.behance.net/emzzingari" target="black"
+              >www.orbit369.com</a
+            >
+          </p>
+          <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          <p><i class="fas fa-envelope"></i> info@orbit369.com</p>
+          <p>
+            <i class="fas fa-phone-alt"></i> 254 729 464 999 | 254 732 066 999
+          </p>
+          <div class="project-CTA">
+            <button class="btn btn-success btn-sm all-our-projects-btn">
+              All our projects
+            </button>
+            <button class="btn btn-primary btn-sm">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="btn btn-primary btn-sm">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="btn btn-primary btn-sm">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="btn btn-primary btn-sm">
+              <i class="fab fa-discord"></i>
+            </button>
+            <button class="btn btn-danger btn-sm">
+              <i class="fab fa-youtube"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of the upper content to be affected by the flex grow -->
+
+    <footer>
+      <div class="container footer-container">
+        <span>©2022</span> | <span id="company">Habahaba</span>
+        |
+        <span> With <i class="fas fa-heart"></i> By Emzzin Gari </span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"
+    ></script>
+    <script src="assets/js/countUp.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

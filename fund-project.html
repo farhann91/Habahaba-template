@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <link rel="stylesheet" href="assets/css/payment-getways.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Habahaba fund project</title>
+  </head>
+  <body>
+    <div class="upper-content">
+      <!-- The navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container nav-item-wrapper">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/habahaba.png" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <!-- <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home</a
+                >
+              </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item btn btn-primary btn-sm" id="register-btn">
+                  <a class="nav-link" href="register.html">register</a>
+                </li>
+                <li class="nav-item btn btn-primary btn-sm" id="login-btn">
+                  <a class="nav-link" href="login.html">login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- mini hero section -->
+      <section class="mini-hero-section" data-aos="fade-down">
+        <div class="container">
+          <div class="prices-wrapper">
+            <div class="card btc">
+              <div class="iconAndName">
+                <span id="btc-logo"></span><span>BTC</span>
+              </div>
+              <div class="amount">
+                <span id="btc-counter">5,269,029.75</span>
+                <span id="kes">KES</span>
+              </div>
+            </div>
+            <div id="text-between-ETH-BTC">
+              <h4 class="text-white">Real time BTC & ETH prices</h4>
+            </div>
+
+            <div class="card eth">
+              <div class="iconAndName">
+                <span id="eth-logo"
+                  ><img
+                    src="./assets//img//ethereum-eth-logo.svg"
+                    alt="eth-logo"
+                    width="30"
+                    height="30" /></span
+                ><span>ETH</span>
+              </div>
+              <div class="amount">
+                <span id="eth-counter">435,008.62</span>
+                <span id="kes">KES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ::::::::::::The projects section:::::::::::::::::::::: -->
+      <section>
+        <div class="container" data-aos="fade-up">
+          <div class="row section-title d-flex flex-column">
+            <span id="active-projects">Send etherium</span>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <p data-aos="fade-up">
+          If you are well farmaliar with cryptocurencies, then you can use the
+          metask to interact directily with the
+          <a href="https://ethereum.org/en/" target="blank"
+            >Etherium Blockchain Network</a
+          >
+          in order to fund a project of your interest. The other can either use
+          paypal or mpesa mobile payment then the system will create a metamask
+          account for you and link it with your credentials.
+        </p>
+        <section id="payment-getways">
+          <div class="card" data-aos="fade-right">
+            <div class="card-header" id="paypal-online"></div>
+          </div>
+          <div
+            class="card mpesa"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            data-aos="fade-up"
+            id="lipa-na-mpesa"
+          ></div>
+          <div
+            class="card metamask"
+            id="fund-with-metamask"
+            data-aos="fade-left"
+          ></div>
+        </section>
+      </div>
+    </div>
+    <!-- End of the upper content to be affected by the flex grow -->
+
+    <!-- The modal code -->
+
+    <!-- Modal lipa na mpesa-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header mpesa">
+            <h5 class="modal-title mpesa"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="254729464999"
+                  required
+                />
+              </div>
+              <input
+                type="submit"
+                value="Send"
+                class="btn btn-success form-control"
+                id="mpesa-payment-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container footer-container">
+        <span>©2022</span> | <span id="company">Habahaba</span>
+        |
+        <span> With <i class="fas fa-heart"></i> By Emzzin Gari </span>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"
+    ></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AS_aG0VwZ6qD0mmToblx-5LyiNlKQV877qKlGO74f2RNsa_tiDGmruChjCdmXgiXt0BQVKpsUttnJ1pe"></script>
+    <script src="assets/js/countUp.js"></script>
+    <script src="assets/js/paymets.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

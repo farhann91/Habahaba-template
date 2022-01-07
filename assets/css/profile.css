@@ -1,0 +1,9 @@
+#owner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+#owner .fas {
+  margin-right: 10px;
+}

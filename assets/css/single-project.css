@@ -1,0 +1,91 @@
+:root {
+  --main-accent-color: #ffd900;
+  --myblue: #00a3ff;
+  --section-title-color-dark: #37474f;
+  --body-color: #495057;
+}
+
+#single-project {
+  padding-bottom: 30px;
+}
+#single-project .project-text {
+  margin-top: 40px;
+}
+
+#project-title {
+  font-size: 120%;
+  color: #202020;
+}
+.project-text p {
+  font-weight: 800;
+}
+
+.project-budget {
+  color: #e76f1e;
+  font-size: 150%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#single-project #active-projects {
+  color: var(--myblue);
+  font-size: 180%;
+  font-weight: 600;
+}
+#single-project #custom-title {
+  color: #797979;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.description-container {
+  background: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* :::::::::::::::::The table:::::::::::::::::: */
+
+.transaction-table {
+  margin-top: 20px;
+}
+#transaction {
+  background: #00a3ff;
+}
+
+#transaction th {
+  /* background: green; */
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 120%;
+}
+
+#transaction_filter input {
+  border-radius: 50px;
+}
+
+/* :::::::::::::::::Media queries::::::::::::: */
+@media screen and (max-width: 990px) {
+  #text-between-ETH-BTC {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .prices-wrapper {
+    flex-direction: column;
+  }
+
+  .btc,
+  .eth {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 130%;
+    height: auto;
+  }
+
+  .project-image {
+    display: none;
+  }
+}

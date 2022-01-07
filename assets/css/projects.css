@@ -1,0 +1,201 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.upper-content {
+  flex-grow: 1;
+}
+
+header {
+  margin-bottom: 90px !important;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::Mini hero with BTC and ETH prices::::::::::::::::: */
+.mini-hero-section {
+  padding: 30px;
+  height: auto;
+  background: #1cd8d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #93edc7,
+    #1cd8d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #93edc7,
+    #1cd8d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.prices-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-hero-section .card {
+  border-radius: 10px;
+}
+
+.btc {
+  border: none;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.eth {
+  border: none;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #ffc837,
+    #ff8008
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #ffc837,
+    #ff8008
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.iconAndName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  font-size: 180%;
+}
+#kes {
+  font-size: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#btc-logo {
+  background: url("../../assets/img/bitcoin-btc-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+}
+#eth-logo {
+  background: rgb(228, 226, 226);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::Projects:::::::::::::::::::::::::::::::::::::::: */
+
+.section-title {
+  margin: 30px auto;
+}
+
+.section-title #active-projects {
+  font-size: 200%;
+  font-weight: 600;
+  color: var(--myblue);
+}
+.section-title #fund-upcoming-startups {
+  font-size: 150%;
+  font-weight: 200;
+  color: slategray;
+}
+
+#project,
+#owner {
+  background: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#project .project-image {
+  margin-right: 40px;
+}
+
+#project-title {
+  font-size: 120%;
+  color: #202020;
+}
+.project-text p {
+  font-weight: 800;
+}
+
+.project-budget {
+  color: #e76f1e;
+  font-size: 150%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.project-raised {
+  color: #008316;
+  font-size: 150%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* :::::::::::::::::Media queries::::::::::::: */
+@media screen and (max-width: 990px) {
+  #text-between-ETH-BTC {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .prices-wrapper {
+    flex-direction: column;
+  }
+
+  .btc,
+  .eth {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 100%;
+    height: auto;
+  }
+
+  .project-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #project {
+    width: 90%;
+  }
+}
